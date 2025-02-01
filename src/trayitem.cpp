@@ -163,8 +163,6 @@ windowid_t TrayItem::dockedWindow()
 void TrayItem::show()
 {
     doSkipTaskbar();
-    if (m_settings.getIconifyDocking())
-        iconifyWindow();
     QSystemTrayIcon::show();
 }
 
